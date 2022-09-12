@@ -4,4 +4,4 @@ eureka:
     fetch-registry: false
 
 server:
-  port: 9099 #DEFAULT PORT: 8761
+  port: 9090 #DEFAULT PORT: 8761
