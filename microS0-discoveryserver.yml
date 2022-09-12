@@ -1,6 +1,0 @@
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-server:
-  port: 9090 #DEFAULT PORT: 8761

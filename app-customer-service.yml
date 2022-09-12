@@ -9,3 +9,6 @@ server:
 #properties creadas
 prueba:
   string: cadena1
+
+user:
+  currentuser: USRAUDIT
