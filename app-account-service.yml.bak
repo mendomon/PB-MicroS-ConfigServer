@@ -5,7 +5,3 @@ eureka:
 
 server:
   port: 9092
-  
-#properties creadas
-var:
-  string: cadena1
