@@ -1,0 +1,31 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/
+
+server:
+  port: 9089
+  
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: app-customer-service
+          uri: lb://app-customer-service
+          predicates:
+            - Path=/customers/**
+        - id: app-account-service
+          uri: lb://app-account-service
+          predicates:
+            - Path=/accounts/**
+        - id: app-credit-service
+          uri: lb://app-credit-service
+          predicates:
+            - Path=/credits/**
+        - id: app-movement-service
+          uri: lb://app-movement-service
+          predicates:
+            - Path=/movements/**
