@@ -5,3 +5,7 @@ eureka:
 
 server:
   port: 7091
+
+#properties creadas
+prueba:
+  string: cadena1
