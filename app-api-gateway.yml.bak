@@ -29,3 +29,15 @@ spring:
           uri: lb://app-movement-service
           predicates:
             - Path=/movements/**
+        - id: app-card-service
+          uri: lb://app-card-service
+          predicates:
+            - Path=/cards/**
+        - id: app-yankiuser-service
+          uri: lb://app-yankiuser-service
+          predicates:
+            - Path=/yankiusers/**
+        - id: app-bootcoinuser-service
+          uri: lb://app-bootcoinuser-service
+          predicates:
+            - Path=/bootcoinusers/**

@@ -41,3 +41,7 @@ spring:
           uri: lb://app-bootcoinuser-service
           predicates:
             - Path=/bootcoinusers/**
+        - id: app-parameter-service
+          uri: lb://app-parameter-service
+          predicates:
+            - Path=/parameters/**
